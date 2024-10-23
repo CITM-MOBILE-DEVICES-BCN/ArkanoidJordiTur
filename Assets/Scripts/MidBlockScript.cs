@@ -6,7 +6,7 @@ public class MidBlockScript : BlockScript
 {
     void Start()
     {
-        resistance = 2;
+        resistance = 3;
         points = 50;
     }
 

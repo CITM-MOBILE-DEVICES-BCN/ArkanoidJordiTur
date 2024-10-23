@@ -10,7 +10,7 @@ public class BlockScript : MonoBehaviour
     private RectTransform rectTransform;
     private BlockManager blockManager;
     public GameObject powerUpPrefab;
-    public float dropRate = 0.1f;
+    public float dropRate = 0.03f;
 
     private Canvas canvas;
 
