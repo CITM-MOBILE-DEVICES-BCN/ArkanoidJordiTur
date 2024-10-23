@@ -618,7 +618,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1111539323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1574716778}
+        m_TargetAssemblyTypeName: MenusController, Assembly-CSharp
+        m_MethodName: ContinueButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1111539323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,6 +702,7 @@ MonoBehaviour:
   playerScore: 0
   highScore: 0
   currentLevel: 1
+  savedGame: 0
 --- !u!4 &1293333780
 Transform:
   m_ObjectHideFlags: 0
