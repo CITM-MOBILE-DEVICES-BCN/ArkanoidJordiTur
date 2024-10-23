@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class GameplayManagerScript : MonoBehaviour
 {
     public static GameplayManagerScript Instance { get; private set; }
 
-    public int playerLives = 3;
-    public int playerScore = 0;
-    public int highScore = 0;
-    public int currentLevel = 1;
+    public int playerLives;
+    public int playerScore;
+    public int highScore;
+    public int currentLevel;
 
     private void Awake()
     {
@@ -26,7 +27,10 @@ public class GameplayManagerScript : MonoBehaviour
 
     void Start()
     {
-        
+        playerLives = 3;
+        playerScore = 0;
+        highScore = 0;
+        currentLevel = 1;
     }
 
     void Update()
