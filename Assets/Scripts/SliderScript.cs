@@ -135,6 +135,7 @@ public class SliderScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PowerUp"))
         {
+            AudioManager.Instance.PlaySound("PowerUp");
             Debug.Log("Lives: " + GameplayManagerScript.Instance.playerLives);
             if (uiManager != null)
             {

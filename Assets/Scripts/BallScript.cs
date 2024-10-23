@@ -128,6 +128,7 @@ public class BallScript : MonoBehaviour
         rigidBody.velocity = direction * speed;
 
         transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
+        AudioManager.Instance.PlaySound("Hit");
     }
 
     private void BounceOffBlock(Collision2D collision)
@@ -156,6 +157,7 @@ public class BallScript : MonoBehaviour
         }
 
         rigidBody.velocity = newVelocity;
+        AudioManager.Instance.PlaySound("Hit");
     }
 
     private void IncreaseSpeed()

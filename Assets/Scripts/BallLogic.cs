@@ -22,6 +22,7 @@ public class BallLogic : MonoBehaviour
     
     void OnBlockHit(Collision2D collision)
     {
+        AudioManager.Instance.PlaySound("Hit");
         BlockScript block = collision.gameObject.GetComponent<BlockScript>();
         if (block != null)
         {
@@ -34,6 +35,7 @@ public class BallLogic : MonoBehaviour
     {
         if (ball != null)
         {
+            AudioManager.Instance.PlaySound("Death");
             GameplayManagerScript.Instance.playerLives--;
             Debug.Log("Lives: " + GameplayManagerScript.Instance.playerLives);
             if (uiManager != null)

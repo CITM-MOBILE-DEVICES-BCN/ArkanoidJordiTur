@@ -39,7 +39,7 @@ public class GameplayManagerScript : MonoBehaviour
 
     void Update()
     {
-     
+       
     }
 
     public void SaveData()
