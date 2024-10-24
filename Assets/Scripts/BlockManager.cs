@@ -8,7 +8,7 @@ public class BlockManager : MonoBehaviour
     public UIManager uiManager;
     public GameObject powerUpPrefab;
     private int remainingBlocks;
-    public float dropRate = 0.3f;
+    public float dropRate = 0.1f;
 
     void Start()
     {

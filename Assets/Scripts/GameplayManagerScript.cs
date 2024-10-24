@@ -96,6 +96,11 @@ public class GameplayManagerScript : MonoBehaviour
         playerScore = 0;
     }
 
+    public void ResetPlayerLevel()
+    {
+        currentLevel = 1;
+    }
+
     public int GetPlayerLives()
     {
         return playerLives;

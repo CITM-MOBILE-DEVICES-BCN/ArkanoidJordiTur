@@ -8,6 +8,7 @@ public class MenusController : MonoBehaviour
     {
         GameplayManagerScript.Instance.ResetPlayerLives();
         GameplayManagerScript.Instance.ResetPlayerScore();
+        GameplayManagerScript.Instance.ResetPlayerLevel();
         SceneManager.Instance.LoadNextLevel();
     }
 
